@@ -1,0 +1,463 @@
+version = "1.0"
+webhooks = []
+[[tasks]]
+room_id = 27628019
+enable_monitor = true
+enable_recorder = true
+enable_auto_record_radio = true
+
+[tasks.postprocessing]
+remux_to_mp4 = true
+delete_source = "safe"
+[[tasks]]
+room_id = 31368686
+enable_monitor = true
+enable_recorder = true
+enable_auto_record_radio = true
+
+[tasks.recorder]
+quality_number = 250
+[[tasks]]
+room_id = 1820703922
+enable_monitor = true
+enable_recorder = true
+enable_auto_record_radio = true
+
+[[tasks]]
+room_id = 22470216
+enable_monitor = true
+enable_recorder = true
+enable_auto_record_radio = true
+
+[[tasks]]
+room_id = 30655190
+enable_monitor = true
+enable_recorder = true
+enable_auto_record_radio = true
+
+[[tasks]]
+room_id = 26966466
+enable_monitor = true
+enable_recorder = true
+enable_auto_record_radio = true
+
+[[tasks]]
+room_id = 31368697
+enable_monitor = true
+enable_recorder = true
+enable_auto_record_radio = true
+
+[[tasks]]
+room_id = 22778610
+enable_monitor = true
+enable_recorder = true
+enable_auto_record_radio = true
+
+[[tasks]]
+room_id = 23770996
+enable_monitor = true
+enable_recorder = true
+enable_auto_record_radio = true
+
+[[tasks]]
+room_id = 23771092
+enable_monitor = true
+enable_recorder = true
+enable_auto_record_radio = true
+
+[[tasks]]
+room_id = 23771189
+enable_monitor = true
+enable_recorder = true
+enable_auto_record_radio = true
+
+[[tasks]]
+room_id = 23771139
+enable_monitor = true
+enable_recorder = true
+enable_auto_record_radio = true
+
+[[tasks]]
+room_id = 21484828
+enable_monitor = true
+enable_recorder = true
+enable_auto_record_radio = true
+
+[[tasks]]
+room_id = 1947277414
+enable_monitor = true
+enable_recorder = true
+enable_auto_record_radio = true
+
+[[tasks]]
+room_id = 21452505
+enable_monitor = true
+enable_recorder = true
+enable_auto_record_radio = true
+
+[[tasks]]
+room_id = 80397
+enable_monitor = true
+enable_recorder = true
+enable_auto_record_radio = true
+
+[[tasks]]
+room_id = 6374209
+enable_monitor = true
+enable_recorder = true
+enable_auto_record_radio = true
+
+[[tasks]]
+room_id = 21756924
+enable_monitor = true
+enable_recorder = true
+enable_auto_record_radio = true
+
+[[tasks]]
+room_id = 21403601
+enable_monitor = true
+enable_recorder = true
+enable_auto_record_radio = true
+
+[[tasks]]
+room_id = 21457197
+enable_monitor = true
+enable_recorder = true
+enable_auto_record_radio = true
+
+[[tasks]]
+room_id = 22389319
+enable_monitor = true
+enable_recorder = true
+enable_auto_record_radio = true
+
+[[tasks]]
+room_id = 31421411
+enable_monitor = true
+enable_recorder = true
+enable_auto_record_radio = true
+
+[[tasks]]
+room_id = 3668335
+enable_monitor = true
+enable_recorder = true
+enable_auto_record_radio = true
+
+[[tasks]]
+room_id = 1967216004
+enable_monitor = true
+enable_recorder = true
+enable_auto_record_radio = true
+
+[[tasks]]
+room_id = 1967215387
+enable_monitor = true
+enable_recorder = true
+enable_auto_record_radio = true
+
+[[tasks]]
+room_id = 1967212929
+enable_monitor = true
+enable_recorder = true
+enable_auto_record_radio = true
+
+[[tasks]]
+room_id = 25788785
+enable_monitor = true
+enable_recorder = true
+enable_auto_record_radio = true
+
+[[tasks]]
+room_id = 1791260756
+enable_monitor = true
+enable_recorder = true
+enable_auto_record_radio = true
+
+[[tasks]]
+room_id = 1791264553
+enable_monitor = true
+enable_recorder = true
+enable_auto_record_radio = true
+
+[[tasks]]
+room_id = 21677969
+enable_monitor = true
+enable_recorder = true
+enable_auto_record_radio = true
+
+[[tasks]]
+room_id = 1791260716
+enable_monitor = true
+enable_recorder = true
+enable_auto_record_radio = true
+
+[[tasks]]
+room_id = 27628030
+enable_monitor = true
+enable_recorder = true
+enable_auto_record_radio = true
+
+[[tasks]]
+room_id = 31368705
+enable_monitor = true
+enable_recorder = true
+enable_auto_record_radio = true
+
+[[tasks]]
+room_id = 23222837
+enable_monitor = true
+enable_recorder = true
+enable_auto_record_radio = true
+
+[[tasks]]
+room_id = 902167
+enable_monitor = true
+enable_recorder = true
+enable_auto_record_radio = true
+
+[[tasks]]
+room_id = 23260993
+enable_monitor = true
+enable_recorder = true
+enable_auto_record_radio = true
+
+[[tasks]]
+room_id = 1766907940
+enable_monitor = true
+enable_recorder = true
+enable_auto_record_radio = true
+
+[[tasks]]
+room_id = 1713546334
+enable_monitor = true
+enable_recorder = true
+enable_auto_record_radio = true
+
+[[tasks]]
+room_id = 1741667419
+enable_monitor = true
+enable_recorder = true
+enable_auto_record_radio = true
+
+[[tasks]]
+room_id = 1986461465
+enable_monitor = true
+enable_recorder = true
+enable_auto_record_radio = true
+
+[[tasks]]
+room_id = 1713548468
+enable_monitor = true
+enable_recorder = true
+enable_auto_record_radio = true
+
+[[tasks]]
+room_id = 851181
+enable_monitor = true
+enable_recorder = true
+enable_auto_record_radio = true
+
+[[tasks]]
+room_id = 22642754
+enable_monitor = true
+enable_recorder = true
+enable_auto_record_radio = true
+
+[output]
+path_template = "{year}-{month}/{roomid} - {uname}/blive_{year}-{month}-{day}-{hour}{minute}{second}_{uname}"
+filesize_limit = 0
+duration_limit = 0
+out_dir = "danmaku"
+
+[logging]
+log_dir = "danmaku/日志文件"
+console_log_level = "DEBUG"
+backup_count = 30
+
+[bili_api]
+base_api_urls = [ "https://api.bilibili.com",]
+base_live_api_urls = [ "https://api.live.bilibili.com",]
+base_play_info_api_urls = [ "https://api.live.bilibili.com",]
+
+[header]
+user_agent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36"
+cookie = "SESSDATA=f3bb6518%2C1800620618%2C655af%2A71CjCzLyPOk_aXWtAzmQi05nw-cCkrKtCBL12BiNAt-OYJu0uisMBYCMgv3jGFRArKHzsSVjdiWEFqekNkOTcyM2lpWXAwY2QyX3FtOUFOdG5rV0Y4YTRFRXBLWV81THhNQkNPQVhmdUdSNlNQRDg4YmxQQ1VMV051MDdlS3RFdW16NHpzZVdEMGJ3IIEC;bili_jct=7d04190be2d8672db4d1351f019eb247;DedeUserID=3690976428165790;DedeUserID__ckMd5=7fdbffcdd1430bf5;sid=76mitzac"
+
+[danmaku]
+danmu_uname = false
+record_gift_send = true
+record_free_gifts = true
+record_guard_buy = true
+record_super_chat = true
+save_raw_danmaku = false
+
+[recorder]
+stream_format = "flv"
+recording_mode = "standard"
+quality_number = 10000
+fmp4_stream_timeout = 30
+read_timeout = 3
+disconnection_timeout = 600
+buffer_size = 134217728
+save_cover = false
+cover_save_strategy = "default"
+
+[postprocessing]
+remux_to_mp4 = false
+inject_extra_metadata = false
+delete_source = "safe"
+
+[space]
+check_interval = 0
+space_threshold = 21474836480
+recycle_records = false
+
+[email_notification]
+began_message_type = "html"
+began_message_title = ""
+began_message_content = ""
+ended_message_type = "html"
+ended_message_title = ""
+ended_message_content = ""
+space_message_type = "html"
+space_message_title = ""
+space_message_content = ""
+error_message_type = "html"
+error_message_title = ""
+error_message_content = ""
+notify_began = true
+notify_ended = true
+notify_error = true
+notify_space = true
+enabled = false
+src_addr = ""
+dst_addr = ""
+auth_code = ""
+smtp_host = "smtp.163.com"
+smtp_port = 465
+
+[serverchan_notification]
+began_message_type = "markdown"
+began_message_title = ""
+began_message_content = ""
+ended_message_type = "markdown"
+ended_message_title = ""
+ended_message_content = ""
+space_message_type = "markdown"
+space_message_title = ""
+space_message_content = ""
+error_message_type = "markdown"
+error_message_title = ""
+error_message_content = ""
+notify_began = true
+notify_ended = true
+notify_error = true
+notify_space = true
+enabled = false
+sendkey = ""
+
+[pushdeer_notification]
+began_message_type = "markdown"
+began_message_title = ""
+began_message_content = ""
+ended_message_type = "markdown"
+ended_message_title = ""
+ended_message_content = ""
+space_message_type = "markdown"
+space_message_title = ""
+space_message_content = ""
+error_message_type = "markdown"
+error_message_title = ""
+error_message_content = ""
+notify_began = true
+notify_ended = true
+notify_error = true
+notify_space = true
+enabled = false
+server = ""
+pushkey = ""
+
+[pushplus_notification]
+began_message_type = "markdown"
+began_message_title = ""
+began_message_content = ""
+ended_message_type = "markdown"
+ended_message_title = ""
+ended_message_content = ""
+space_message_type = "markdown"
+space_message_title = ""
+space_message_content = ""
+error_message_type = "markdown"
+error_message_title = ""
+error_message_content = ""
+notify_began = false
+notify_ended = false
+notify_error = true
+notify_space = false
+enabled = true
+token = "95b0cc604b53407da802545810c9c7da"
+topic = ""
+
+[telegram_notification]
+began_message_type = "html"
+began_message_title = ""
+began_message_content = ""
+ended_message_type = "html"
+ended_message_title = ""
+ended_message_content = ""
+space_message_type = "html"
+space_message_title = ""
+space_message_content = ""
+error_message_type = "html"
+error_message_title = ""
+error_message_content = ""
+notify_began = true
+notify_ended = true
+notify_error = true
+notify_space = true
+enabled = false
+token = ""
+chatid = ""
+server = ""
+
+[bark_notification]
+began_message_type = "markdown"
+began_message_title = ""
+began_message_content = ""
+ended_message_type = "markdown"
+ended_message_title = ""
+ended_message_content = ""
+space_message_type = "markdown"
+space_message_title = ""
+space_message_content = ""
+error_message_type = "markdown"
+error_message_title = ""
+error_message_content = ""
+notify_began = true
+notify_ended = true
+notify_error = true
+notify_space = true
+enabled = false
+server = ""
+pushkey = ""
+
+[gotify_notification]
+began_message_type = "markdown"
+began_message_title = ""
+began_message_content = ""
+ended_message_type = "markdown"
+ended_message_title = ""
+ended_message_content = ""
+space_message_type = "markdown"
+space_message_title = ""
+space_message_content = ""
+error_message_type = "markdown"
+error_message_title = ""
+error_message_content = ""
+notify_began = false
+notify_ended = false
+notify_error = true
+notify_space = false
+enabled = true
+gotify_url = "http://103.236.97.252:27972"
+gotify_token = "A8SGpekSYSltq4L"

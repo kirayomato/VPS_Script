@@ -1,0 +1,294 @@
+version = "1.0"
+webhooks = []
+[[tasks]]
+room_id = 370468
+enable_monitor = true
+enable_recorder = false
+enable_auto_record_radio = true
+
+[[tasks]]
+room_id = 3473884
+enable_monitor = true
+enable_recorder = false
+enable_auto_record_radio = true
+
+[tasks.output]
+filesize_limit = 0
+[[tasks]]
+room_id = 23260993
+enable_monitor = true
+enable_recorder = false
+enable_auto_record_radio = true
+
+[tasks.output]
+filesize_limit = 0
+[[tasks]]
+room_id = 27628019
+enable_monitor = true
+enable_recorder = true
+enable_auto_record_radio = true
+
+[[tasks]]
+room_id = 21403601
+enable_monitor = true
+enable_recorder = false
+enable_auto_record_radio = true
+
+[[tasks]]
+room_id = 31368686
+enable_monitor = true
+enable_recorder = false
+enable_auto_record_radio = true
+
+[[tasks]]
+room_id = 27628030
+enable_monitor = true
+enable_recorder = false
+enable_auto_record_radio = true
+
+[[tasks]]
+room_id = 31368705
+enable_monitor = true
+enable_recorder = false
+enable_auto_record_radio = true
+
+[[tasks]]
+room_id = 1820703922
+enable_monitor = true
+enable_recorder = false
+enable_auto_record_radio = true
+
+[[tasks]]
+room_id = 1011107
+enable_monitor = true
+enable_recorder = true
+enable_auto_record_radio = true
+
+[[tasks]]
+room_id = 1791260756
+enable_monitor = true
+enable_recorder = false
+enable_auto_record_radio = true
+
+[[tasks]]
+room_id = 1713546334
+enable_monitor = true
+enable_recorder = true
+enable_auto_record_radio = true
+
+[[tasks]]
+room_id = 1967216004
+enable_monitor = true
+enable_recorder = false
+enable_auto_record_radio = true
+
+[[tasks]]
+room_id = 25788785
+enable_monitor = true
+enable_recorder = false
+enable_auto_record_radio = true
+
+[[tasks]]
+room_id = 851181
+enable_monitor = true
+enable_recorder = false
+enable_auto_record_radio = true
+
+[output]
+path_template = "{roomid} - {uname}/blive_{year}-{month}-{day}-{hour}{minute}{second}_{uname}_{area}_{title}"
+filesize_limit = 2147483648
+duration_limit = 0
+out_dir = "录播文件"
+
+[logging]
+log_dir = "日志文件"
+console_log_level = "DEBUG"
+backup_count = 30
+
+[bili_api]
+base_api_urls = [ "https://api.bilibili.com",]
+base_live_api_urls = [ "https://api.live.bilibili.com",]
+base_play_info_api_urls = [ "https://api.live.bilibili.com",]
+
+[header]
+user_agent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36"
+cookie = "SESSDATA=e54f5b1c%2C1799895549%2Ccbc2b%2A71CjBFaVjqu7cr8thnLHM2P5RA1s13k0Kqu75iQagu7uFIUKYKUsFdDy3wvGT0cuW2orYSVjdfeGFkd3R5SjlUU1gweG1FeHNCZzlyLU5tRXM1cGx5U1FtclJnak42em9aM04wc3NMUS0wRGpvZVNSLUh1Q0VZU2stalZhQWR2dDY1NkRvajFhdHpRIIEC;bili_jct=cee92585dd39f671f5beddfc8610e9ec;DedeUserID=2061407;DedeUserID__ckMd5=dd9e26856062c1b1;sid=flqenf0s"
+
+[danmaku]
+danmu_uname = true
+record_gift_send = true
+record_free_gifts = true
+record_guard_buy = true
+record_super_chat = true
+save_raw_danmaku = false
+
+[recorder]
+stream_format = "flv"
+recording_mode = "standard"
+quality_number = 10000
+fmp4_stream_timeout = 60
+read_timeout = 3
+disconnection_timeout = 180
+buffer_size = 16777216
+save_cover = false
+cover_save_strategy = "default"
+
+[postprocessing]
+remux_to_mp4 = true
+inject_extra_metadata = false
+delete_source = "safe"
+
+[space]
+check_interval = 10
+space_threshold = 2684354560
+recycle_records = true
+
+[email_notification]
+began_message_type = "html"
+began_message_title = ""
+began_message_content = ""
+ended_message_type = "html"
+ended_message_title = ""
+ended_message_content = ""
+space_message_type = "html"
+space_message_title = ""
+space_message_content = ""
+error_message_type = "html"
+error_message_title = ""
+error_message_content = ""
+notify_began = false
+notify_ended = false
+notify_error = false
+notify_space = false
+enabled = true
+src_addr = "urakik@163.com"
+dst_addr = "908786794@qq.com"
+auth_code = "GHTIAQJJEEQBZUYR"
+smtp_host = "smtp.163.com"
+smtp_port = 465
+
+[serverchan_notification]
+began_message_type = "markdown"
+began_message_title = ""
+began_message_content = ""
+ended_message_type = "markdown"
+ended_message_title = ""
+ended_message_content = ""
+space_message_type = "markdown"
+space_message_title = ""
+space_message_content = ""
+error_message_type = "markdown"
+error_message_title = "腾讯出错"
+error_message_content = ""
+notify_began = false
+notify_ended = false
+notify_error = true
+notify_space = false
+enabled = false
+sendkey = "SCT107362TlQ1CzZSlgQdFkjBVc880XYZD"
+
+[pushdeer_notification]
+began_message_type = "markdown"
+began_message_title = ""
+began_message_content = ""
+ended_message_type = "markdown"
+ended_message_title = ""
+ended_message_content = ""
+space_message_type = "markdown"
+space_message_title = ""
+space_message_content = ""
+error_message_type = "markdown"
+error_message_title = ""
+error_message_content = ""
+notify_began = true
+notify_ended = true
+notify_error = true
+notify_space = true
+enabled = false
+server = ""
+pushkey = ""
+
+[pushplus_notification]
+began_message_type = "markdown"
+began_message_title = ""
+began_message_content = ""
+ended_message_type = "markdown"
+ended_message_title = ""
+ended_message_content = ""
+space_message_type = "markdown"
+space_message_title = ""
+space_message_content = ""
+error_message_type = "markdown"
+error_message_title = "腾讯出错"
+error_message_content = ""
+notify_began = false
+notify_ended = false
+notify_error = true
+notify_space = false
+enabled = true
+token = "95b0cc604b53407da802545810c9c7da"
+topic = ""
+
+[telegram_notification]
+began_message_type = "html"
+began_message_title = ""
+began_message_content = ""
+ended_message_type = "html"
+ended_message_title = ""
+ended_message_content = ""
+space_message_type = "html"
+space_message_title = ""
+space_message_content = ""
+error_message_type = "html"
+error_message_title = ""
+error_message_content = ""
+notify_began = true
+notify_ended = true
+notify_error = true
+notify_space = true
+enabled = false
+token = ""
+chatid = ""
+server = ""
+
+[bark_notification]
+began_message_type = "markdown"
+began_message_title = ""
+began_message_content = ""
+ended_message_type = "markdown"
+ended_message_title = ""
+ended_message_content = ""
+space_message_type = "markdown"
+space_message_title = ""
+space_message_content = ""
+error_message_type = "markdown"
+error_message_title = ""
+error_message_content = ""
+notify_began = true
+notify_ended = true
+notify_error = true
+notify_space = true
+enabled = false
+server = ""
+pushkey = ""
+
+[gotify_notification]
+began_message_type = "markdown"
+began_message_title = ""
+began_message_content = ""
+ended_message_type = "markdown"
+ended_message_title = ""
+ended_message_content = ""
+space_message_type = "markdown"
+space_message_title = ""
+space_message_content = ""
+error_message_type = "markdown"
+error_message_title = ""
+error_message_content = ""
+notify_began = false
+notify_ended = false
+notify_error = true
+notify_space = false
+enabled = true
+gotify_url = "http://103.236.97.252:27972"
+gotify_token = "A8SGpekSYSltq4L"

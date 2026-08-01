@@ -1,0 +1,6 @@
+# ssh -R 10809:127.0.0.1:10809 root@103.236.97.252 -p 63333
+Host 炎火云
+  HostName 103.236.97.252
+  RemoteForward 10809 127.0.0.1:10809
+  Port 63333
+  User root
