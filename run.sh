@@ -38,7 +38,7 @@ export HTTPS_PROXY=socks5://127.0.0.1:10809
 docker run -d \
   --name brec \
   -p 2356:2356 \
-  -v /home/admin/brec:/rec \
+  -v ~/brec:/rec \
   -e BREC_HTTP_BASIC_USER=admin \
   -e BREC_HTTP_BASIC_PASS=2377839qw \
   -e UMASK=022 \
