@@ -30,7 +30,7 @@ sudo systemctl status code-server
 sudo usermod -aG docker $USER
 newgrp docker
 docker pull bililive/recorder:latest
-
+mkdir ~/brec
 # gotify
 # download from https://github.com/gotify/server/releases
 unzip gotify-{PLATFORM}.zip
