@@ -45,3 +45,5 @@ docker run -d \
   -e PUID=1000 \
   -e PGID=1000 \
   bililive/recorder:latest
+
+root@185.223.252.21 H7q6BMkWY4ek462Ogp
