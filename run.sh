@@ -32,8 +32,8 @@ conda activate blrec
 cd ~/AutoFund
 screen -S fund python web_app.py
 
-export HTTP_PROXY=socks5://127.0.0.1:10809
-export HTTPS_PROXY=socks5://127.0.0.1:10809
+export HTTP_PROXY=http://127.0.0.1:10809
+export HTTPS_PROXY=http://127.0.0.1:10809
 
 docker run -d \
   --name brec \
