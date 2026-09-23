@@ -46,6 +46,9 @@ docker run -d \
   -e PGID=1000 \
   bililive/recorder:latest
 
+docker stop brec
+docker rm brec
+
 cSd9xhG2Qc6KXknn
 kAKw6Wdbv68UGFyZ
 root@185.223.252.21 H7q6BMkWY4ek462Ogp
