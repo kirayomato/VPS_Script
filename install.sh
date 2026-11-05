@@ -5,6 +5,12 @@ mkdir blrec
 # vtb-dynamic
 git clone https://github.com/kirayomato/vtb_dynamic_push
 
+# BLTH
+git clone https://github.com/kirayomato/BLTH
+cd BLTH
+npm install
+npm run build
+
 # miniconda
 curl -O https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
 bash ~/Miniconda3-latest-Linux-x86_64.sh
