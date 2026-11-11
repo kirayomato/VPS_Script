@@ -33,7 +33,7 @@ cd ~/AutoFund
 screen -S fund python web_app.py
 
 cd ~/BLTH
-screen -S blth node dist-standalone/blth-standalone.mjs
+screen -S blth python console/console.py
 
 cd ~/web-video-editor
 screen -S video python server/app.py
