@@ -32,9 +32,11 @@ conda activate blrec
 cd ~/AutoFund
 screen -S fund python web_app.py
 
+conda activate blrec
 cd ~/BLTH
 screen -S blth python console/console.py
 
+conda activate blrec
 cd ~/web-video-editor
 screen -S video python server/app.py
 
