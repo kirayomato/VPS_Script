@@ -41,3 +41,20 @@ mkdir ~/brec
 # download from https://github.com/gotify/server/releases
 unzip gotify-{PLATFORM}.zip
 chmod +x gotify-{PLATFORM}
+
+# zram
+sudo apt install systemd-zram-generator
+sudo tee /etc/systemd/zram-generator.conf > /dev/null <<'EOF'
+[zram0]
+zram-size = ram / 2
+compression-algorithm = zstd
+swap-priority = 100
+EOF
+
+sudo systemctl daemon-reload
+sudo systemctl start dev-zram0.swap
+# sudo nano /etc/sysctl.conf
+vm.swappiness = 100
+vm.page-cluster=0
+
+sudo sysctl -p
